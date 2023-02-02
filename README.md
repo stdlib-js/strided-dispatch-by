@@ -37,7 +37,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import dispatchBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-dispatch-by@esm/index.mjs';
+import dispatchBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-dispatch-by@v0.0.1-esm/index.mjs';
 ```
 
 #### dispatchBy( fcns, types, data, nargs, nin, nout )
@@ -292,7 +292,7 @@ var unaryBy = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-unary
 import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs@esm/index.mjs';
 import identity from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-identity@esm/index.mjs';
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
-import dispatchBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-dispatch-by@esm/index.mjs';
+import dispatchBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-dispatch-by@v0.0.1-esm/index.mjs';
 
 var types = [ 'float64', 'float64' ];
 
