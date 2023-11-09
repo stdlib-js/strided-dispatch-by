@@ -239,7 +239,7 @@ The function accepts the following arguments:
 
     ```javascript
     var unaryBy = require( '@stdlib/strided-base-unary-by' );
-    
+
     function foo( x ) {
         return x * 10.0;
     }
@@ -274,7 +274,7 @@ The function accepts the following arguments:
 
     ```javascript
     var unaryBy = require( '@stdlib/strided-base-unary-by' );
-    
+
     function foo( x ) {
         return x * 10.0;
     }
@@ -339,6 +339,12 @@ console.log( y );
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/strided-dispatch`][@stdlib/strided/dispatch]</span><span class="delimiter">: </span><span class="description">create a strided array function interface which performs multiple dispatch.</span>
 
 </section>
 
@@ -413,7 +419,13 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/strided-dispatch-by/main/LICENSE
 
-[@stdlib/strided/dtypes]: https://github.com/stdlib-js/stdlib
+[@stdlib/strided/dtypes]: https://github.com/stdlib-js/strided-dtypes
+
+<!-- <related-links> -->
+
+[@stdlib/strided/dispatch]: https://github.com/stdlib-js/strided-dispatch
+
+<!-- </related-links> -->
 
 </section>
 
