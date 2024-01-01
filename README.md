@@ -41,19 +41,30 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/strided-dispatch-by
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import dispatchBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-dispatch-by@esm/index.mjs';
-```
-The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/strided-dispatch-by/tags). For example,
-
-```javascript
-import dispatchBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-dispatch-by@v0.1.1-esm/index.mjs';
+var dispatchBy = require( '@stdlib/strided-dispatch-by' );
 ```
 
 #### dispatchBy( fcns, types, data, nargs, nin, nout )
@@ -63,9 +74,9 @@ Returns a strided array function interface which accepts a callback function and
 <!-- eslint-disable array-element-newline -->
 
 ```javascript
-import unaryBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-unary-by@esm/index.mjs';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
-import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@esm/index.mjs';
+var unaryBy = require( '@stdlib/strided-base-unary-by' );
+var Float64Array = require( '@stdlib/array-float64' );
+var Float32Array = require( '@stdlib/array-float32' );
 
 function foo( x ) {
     return x * 10.0;
@@ -227,8 +238,8 @@ The function accepts the following arguments:
     <!-- eslint-disable array-element-newline -->
 
     ```javascript
-    import unaryBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-unary-by@esm/index.mjs';
-    
+    var unaryBy = require( '@stdlib/strided-base-unary-by' );
+
     function foo( x ) {
         return x * 10.0;
     }
@@ -262,8 +273,8 @@ The function accepts the following arguments:
     <!-- eslint-disable array-element-newline -->
 
     ```javascript
-    import unaryBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-unary-by@esm/index.mjs';
-    
+    var unaryBy = require( '@stdlib/strided-base-unary-by' );
+
     function foo( x ) {
         return x * 10.0;
     }
@@ -298,17 +309,12 @@ The function accepts the following arguments:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-var unaryBy = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-unary-by' ).ndarray;
-import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs@esm/index.mjs';
-import identity from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-identity@esm/index.mjs';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
-import dispatchBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-dispatch-by@esm/index.mjs';
+```javascript
+var unaryBy = require( '@stdlib/strided-base-unary-by' ).ndarray;
+var abs = require( '@stdlib/math-base-special-abs' );
+var identity = require( '@stdlib/math-base-special-identity' );
+var Float64Array = require( '@stdlib/array-float64' );
+var dispatchBy = require( '@stdlib/strided-dispatch-by' );
 
 var types = [ 'float64', 'float64' ];
 
@@ -324,10 +330,6 @@ var y = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 strided( 3, 'float64', x, 1, 2, 'float64', y, 1, 2, identity );
 console.log( y );
 // => <Float64Array>[ 0.0, 0.0, 3.0, 4.0, 5.0 ]
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -337,6 +339,12 @@ console.log( y );
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/strided-dispatch`][@stdlib/strided/dispatch]</span><span class="delimiter">: </span><span class="description">create a strided array function interface which performs multiple dispatch.</span>
 
 </section>
 
@@ -351,7 +359,7 @@ console.log( y );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -368,7 +376,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -381,8 +389,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/strided-dispatch-by.svg
 [npm-url]: https://npmjs.org/package/@stdlib/strided-dispatch-by
 
-[test-image]: https://github.com/stdlib-js/strided-dispatch-by/actions/workflows/test.yml/badge.svg?branch=v0.1.1
-[test-url]: https://github.com/stdlib-js/strided-dispatch-by/actions/workflows/test.yml?query=branch:v0.1.1
+[test-image]: https://github.com/stdlib-js/strided-dispatch-by/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/strided-dispatch-by/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/strided-dispatch-by/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/strided-dispatch-by?branch=main
@@ -411,7 +419,13 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/strided-dispatch-by/main/LICENSE
 
-[@stdlib/strided/dtypes]: https://github.com/stdlib-js/stdlib/tree/esm
+[@stdlib/strided/dtypes]: https://github.com/stdlib-js/strided-dtypes
+
+<!-- <related-links> -->
+
+[@stdlib/strided/dispatch]: https://github.com/stdlib-js/strided-dispatch
+
+<!-- </related-links> -->
 
 </section>
 
