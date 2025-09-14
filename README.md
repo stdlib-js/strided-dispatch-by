@@ -314,7 +314,7 @@ The function accepts the following arguments:
 ```javascript
 var unaryBy = require( '@stdlib/strided-base-unary-by' ).ndarray;
 var abs = require( '@stdlib/math-base-special-abs' );
-var identity = require( '@stdlib/math-base-special-identity' );
+var identity = require( '@stdlib/number-float64-base-identity' );
 var Float64Array = require( '@stdlib/array-float64' );
 var dispatchBy = require( '@stdlib/strided-dispatch-by' );
 
@@ -378,7 +378,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
