@@ -48,6 +48,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import dispatchBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-dispatch-by@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/strided-dispatch-by/tags). For example,
+
+```javascript
 import dispatchBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-dispatch-by@v0.2.3-esm/index.mjs';
 ```
 
@@ -303,7 +308,7 @@ var unaryBy = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-unary
 import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs@esm/index.mjs';
 import identity from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-identity@esm/index.mjs';
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
-import dispatchBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-dispatch-by@v0.2.3-esm/index.mjs';
+import dispatchBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-dispatch-by@esm/index.mjs';
 
 var types = [ 'float64', 'float64' ];
 
