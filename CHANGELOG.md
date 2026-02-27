@@ -2,6 +2,40 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-02-27)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`e71e7b6`](https://github.com/stdlib-js/stdlib/commit/e71e7b60f251ecec8e5591f4b9580e5b133da2b5) - **bench:** refactor to use string interpolation in `strided/dispatch-by` [(#10522)](https://github.com/stdlib-js/stdlib/pull/10522) _(by Vishal Gaikwad)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Vishal Gaikwad
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.3">
 
 ## 0.2.3 (2026-02-08)
